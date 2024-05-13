@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda de Aniversariantes</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    .menu {
+        margin-bottom: 20px; /* Adicionando margem na parte inferior */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Agenda de Aniversariantes</h1>
+    <div id="menu" class="menu">
+        <button onclick="cadastrar()">Cadastrar Pessoa</button>
+        <button onclick="excluir()">Excluir Pessoa</button>
+        <button onclick="alterar()">Alterar Data/Mês</button>
+        <button onclick="consultarData()">Consultar por Data</button>
+        <button onclick="consultarMes()">Consultar por Mês</button>
+        <button onclick="consultarLetra()">Consultar por Letra</button>
+        <button onclick="mostrarNomeOrdenado()">Mostrar Ordenado por Nome</button>
+        <button onclick="mostrarMesOrdenado()">Mostrar Ordenado por Mês</button>
+        <button onclick="sair()">Sair</button>
+    </div>
+    <div id="output" class="output"></div>
+    <div id="agenda" class="agenda">
+        <h2>Agenda</h2>
+        <ul id="agenda-list" class="agenda-list"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
